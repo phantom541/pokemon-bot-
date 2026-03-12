@@ -20,7 +20,8 @@ module.exports = async (sock, msg) => {
   rareDragons: [],
   titans: [],
   eyes: [],
-  guild: null
+  guild: null,
+  inventory: {}
  }
 
  db.write("./data/players.json", players)

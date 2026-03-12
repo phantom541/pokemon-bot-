@@ -1,0 +1,33 @@
+{
+ "flame_drake": {
+  "name": "Flame Drake",
+  "element": "fire",
+  "rarity": "common",
+  "baseHP": 120,
+  "baseAttack": 25
+ },
+
+ "aqua_serpent": {
+  "name": "Aqua Serpent",
+  "element": "water",
+  "rarity": "common",
+  "baseHP": 110,
+  "baseAttack": 22
+ },
+
+ "storm_wyvern": {
+  "name": "Storm Wyvern",
+  "element": "air",
+  "rarity": "rare",
+  "baseHP": 130,
+  "baseAttack": 30
+ },
+
+ "terra_behemoth": {
+  "name": "Terra Behemoth",
+  "element": "earth",
+  "rarity": "rare",
+  "baseHP": 160,
+  "baseAttack": 20
+ }
+}

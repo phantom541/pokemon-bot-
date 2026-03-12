@@ -1,6 +1,7 @@
 const db = require("./database")
 const { battle } = require("./battleEngine")
 const { getPlayerBuffs } = require("./instability")
+const { STARTER_DRAGON } = require("./constants")
 
 module.exports = {
   spawnTitan: (name) => {
@@ -20,9 +21,10 @@ module.exports = {
 
   fightTitan: (player, titan) => {
     const options = getPlayerBuffs(player, titan)
+    const attacker = player.dragons[0] || STARTER_DRAGON
 
     const result = battle(
-      player.dragons[0] || { name: "Starter Dragon", attack: 50, defense: 20, hp: 200, element: "fire", linkedEye: null, eye: null },
+      attacker,
       { ...titan, eye: titan.linkedEye },
       options
     )

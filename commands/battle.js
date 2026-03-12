@@ -1,42 +1,39 @@
 const db = require("../system/database")
+const { getRandomEnemy } = require("../system/enemySystem")
 const { battle } = require("../system/battleEngine")
 const { getPlayerBuffs } = require("../system/instability")
+const { STARTER_DRAGON } = require("../system/constants")
 
-module.exports = async (sock, msg, args) => {
-  const sender = msg.key.remoteJid
-  const players = db.read("./data/players.json")
-  const world = db.read("./data/world.json")
+module.exports = async (sock,msg) => {
 
-  const player = players[sender]
-  if (!player) return sock.sendMessage(sender, { text: "Register first with =register" })
+ const sender = msg.key.remoteJid
 
-  // Pick a titan from world.activeTitans for now
-  const titan = world.activeTitans?.[0]
-  if (!titan) return sock.sendMessage(sender, { text: "No titans are active right now." })
+ const players = db.read("./data/players.json")
 
-  // Temporary attacker: pick first dragon, or create basic stats
-  const attacker = player.dragons[0] || {
-    name: "Starter Dragon",
-    attack: 50,
-    defense: 20,
-    hp: 200,
-    element: "fire",
-    linkedEye: null,
-    eye: null
-  }
+ const player = players[sender]
 
-  const defender = {
-    name: titan.name,
-    attack: titan.attack || 60,
-    defense: titan.defense || 30,
-    hp: titan.hp || 300,
-    element: titan.element || "fire",
-    linkedEye: titan.linkedEye,
-    eye: null
-  }
+ if(!player){
+  return sock.sendMessage(sender,{text:"Register first using =register"})
+ }
 
-  const options = getPlayerBuffs(player, defender)
-  const result = battle(attacker, defender, options)
+ const enemy = getRandomEnemy()
+ const options = getPlayerBuffs(player)
+ const attacker = player.dragons[0] || STARTER_DRAGON
 
-  sock.sendMessage(sender, { text: `⚔ Battle Result vs ${titan.name}:\n\n${result.log.join("\n")}\n\nWinner: ${result.winner}` })
+ const result = battle(attacker, enemy, options)
+
+ let log = `⚔️ Battle Started: ${attacker.name} vs ${enemy.name}\n\n`
+ log += result.log.join("\n")
+
+ if(result.winner === attacker.name){
+  player.gold += enemy.gold
+  log += `\n\n🏆 Victory!\nYou earned ${enemy.gold} gold.`
+ } else {
+  log += `\n\n☠️ You were defeated.`
+ }
+
+ db.write("./data/players.json",players)
+
+ sock.sendMessage(sender,{text:log})
+
 }

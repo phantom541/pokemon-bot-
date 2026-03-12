@@ -1,23 +1,21 @@
 {
-  "name": "app",
+  "name": "dragon-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A WhatsApp-based text MMO bot",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/phantom541/pokemon-bot-.git"
-  },
-  "keywords": [],
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "mmo",
+    "rpg"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/phantom541/pokemon-bot-/issues"
-  },
-  "homepage": "https://github.com/phantom541/pokemon-bot-#readme",
   "dependencies": {
     "@whiskeysockets/baileys": "^7.0.0-rc.9",
     "fs-extra": "^11.3.4",

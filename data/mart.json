@@ -1,0 +1,61 @@
+{
+ "page1": {
+  "healing_potion": 500,
+  "revive_scroll": 1500,
+  "capture_net": 2500,
+  "dungeon_key": 3000,
+  "explorer_compass": 5000,
+  "small_gold_pouch": 10000,
+  "dragon_bait": 20000
+ },
+
+ "page2": {
+  "advanced_capture_net": 75000,
+  "rare_dragon_bait": 120000,
+  "tamer_gloves": 250000,
+  "tracking_crystal": 400000,
+  "beast_lure": 600000,
+  "ancient_compass": 900000,
+  "gold_vault_key": 1500000
+ },
+
+ "page3": {
+  "relic_fragment_bundle": 5000000,
+  "ancient_tablet": 7000000,
+  "dragon_heart_shard": 10000000,
+  "mystic_scale": 12000000,
+  "guardian_token": 15000000,
+  "rune_stone": 20000000,
+  "legendary_map": 30000000
+ },
+
+ "page4": {
+  "dragon_egg": 100000000,
+  "mythic_dragon_egg": 500000000,
+  "titan_locator": 750000000,
+  "guardian_summon_scroll": 1000000000,
+  "ancient_beast_whistle": 1500000000,
+  "dragon_tamer_crown": 2000000000,
+  "void_relic": 5000000000
+ },
+
+ "page5": {
+  "ctarnidd_trap": 10000000000,
+  "lycaon_fang_shackle": 10000000000,
+  "weissash_core_prison": 10000000000,
+  "zephyrus_wind_chain": 10000000000,
+  "kraken_depth_anchor": 10000000000,
+  "abyssal_leviathan_harpoon": 10000000000,
+  "phoenix_ember_cage": 10000000000
+ },
+
+ "page6": {
+  "eye_of_blazz": 100000000000,
+  "eye_of_vento": 100000000000,
+  "eye_of_abyss": 100000000000,
+  "eye_of_terra": 100000000000,
+  "eye_of_lumen": 100000000000,
+  "eye_of_tempest": 100000000000,
+  "eye_of_void": 100000000000
+ }
+}

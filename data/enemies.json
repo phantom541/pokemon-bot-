@@ -1,0 +1,29 @@
+{
+ "goblin": {
+  "name": "Goblin",
+  "hp": 40,
+  "attack": 8,
+  "gold": 60
+ },
+
+ "stone_beast": {
+  "name": "Stone Beast",
+  "hp": 80,
+  "attack": 12,
+  "gold": 120
+ },
+
+ "shadow_wolf": {
+  "name": "Shadow Wolf",
+  "hp": 60,
+  "attack": 10,
+  "gold": 90
+ },
+
+ "ancient_guardian": {
+  "name": "Ancient Guardian",
+  "hp": 120,
+  "attack": 18,
+  "gold": 200
+ }
+}

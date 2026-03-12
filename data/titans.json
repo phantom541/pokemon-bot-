@@ -5,7 +5,7 @@
     "attack": 80,
     "defense": 40,
     "element": "fire",
-    "linkedEye": "Fire Eye"
+    "linkedEye": "blazz"
   },
   {
     "name": "Storm Lord Titan",
@@ -13,6 +13,6 @@
     "attack": 90,
     "defense": 30,
     "element": "storm",
-    "linkedEye": "Storm Eye"
+    "linkedEye": "sino"
   }
 ]
