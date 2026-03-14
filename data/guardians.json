@@ -1,0 +1,9 @@
+[
+ {
+  "name":"Leviathan Guardian",
+  "hp":900,
+  "attack":70,
+  "reward":100000000,
+  "drop":"eye_fragment"
+ }
+]

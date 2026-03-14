@@ -1,0 +1,12 @@
+[
+ {
+  "name":"Celestial Titan",
+  "hp":8000,
+  "attack":100
+ },
+ {
+  "name":"Void Leviathan",
+  "hp":12000,
+  "attack":120
+ }
+]

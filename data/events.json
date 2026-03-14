@@ -1,0 +1,13 @@
+[
+ {
+  "name":"Eclipse Event",
+  "boss":"Shadow Leviathan",
+  "duration":604800000
+ },
+
+ {
+  "name":"Dragon Festival",
+  "bonus":"double_xp",
+  "duration":604800000
+ }
+]

@@ -4,7 +4,8 @@
   "element": "fire",
   "rarity": "common",
   "baseHP": 120,
-  "baseAttack": 25
+  "baseAttack": 25,
+  "moves": ["fire_breath"]
  },
 
  "aqua_serpent": {
@@ -12,7 +13,8 @@
   "element": "water",
   "rarity": "common",
   "baseHP": 110,
-  "baseAttack": 22
+  "baseAttack": 22,
+  "moves": ["aqua_blast"]
  },
 
  "storm_wyvern": {
@@ -20,7 +22,8 @@
   "element": "air",
   "rarity": "rare",
   "baseHP": 130,
-  "baseAttack": 30
+  "baseAttack": 30,
+  "moves": ["wind_slash"]
  },
 
  "terra_behemoth": {
@@ -28,6 +31,7 @@
   "element": "earth",
   "rarity": "rare",
   "baseHP": 160,
-  "baseAttack": 20
+  "baseAttack": 20,
+  "moves": ["earth_crush"]
  }
 }

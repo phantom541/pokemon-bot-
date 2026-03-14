@@ -1,0 +1,15 @@
+[
+ {
+  "id":"guardian_hunter",
+  "task":"kill_guardian",
+  "goal":3,
+  "reward":"legendary_egg"
+ },
+
+ {
+  "id":"beast_tamer",
+  "task":"capture_beast",
+  "goal":2,
+  "reward":"1000000_gold"
+ }
+]

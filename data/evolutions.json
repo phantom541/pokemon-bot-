@@ -1,0 +1,11 @@
+{
+ "storm_wyvern": {
+  "level": 20,
+  "evolvesTo": "tempest_wyvern"
+ },
+
+ "ember_drake": {
+  "level": 18,
+  "evolvesTo": "inferno_drake"
+ }
+}

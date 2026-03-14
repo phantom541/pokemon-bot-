@@ -1,0 +1,19 @@
+{
+ "storm_wyvern":[
+  {
+   "level":5,
+   "skill":"Wind Slash",
+   "damage":40
+  },
+  {
+   "level":10,
+   "skill":"Tempest Shield",
+   "effect":"reduce damage"
+  },
+  {
+   "level":20,
+   "skill":"Hurricane Fury",
+   "damage":90
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+[
+ {
+  "name":"Abyss Devourer",
+  "hp":700,
+  "attack":60,
+  "captureItem":"abyss_trap",
+  "reward":5000000
+ }
+]

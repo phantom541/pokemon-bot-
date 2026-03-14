@@ -1,0 +1,19 @@
+[
+ {
+  "id":"guardian_slayer",
+  "name":"Guardian Slayer",
+  "condition":"kill_guardian"
+ },
+
+ {
+  "id":"beast_master",
+  "name":"Beast Master",
+  "condition":"capture_beast"
+ },
+
+ {
+  "id":"dragon_tamer",
+  "name":"Dragon Tamer",
+  "condition":"own_10_dragons"
+ }
+]
